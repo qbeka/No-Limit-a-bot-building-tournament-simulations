@@ -1,0 +1,28 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "historical_compile_command": "g++ -O3 -march=native -shared -fPIC -fopenmp castle_fourway.cpp -o castle_eval.so",
+  "historical_runtime_variables": {
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "opponent_data": "Synthetic template and random populations only. No applicant submissions or other users conversations.",
+  "historical_source_files": [
+    "castle_analysis.py",
+    "castle_fourway.py",
+    "castle_fourway_meta.py",
+    "castle_fourway.cpp"
+  ],
+  "historical_group_selection_note": "The stages named validation were also used to rank candidates.",
+  "later_frozen_group_check": {
+    "source": "castle_frozen_check.py",
+    "seed": 430291867,
+    "groups_per_scenario": 50000,
+    "scenarios": 6,
+    "total_groups": 300000,
+    "candidate_reselection": false
+  },
+  "large_array_note": "The original 266744790-byte castle_analysis.npz is omitted. Original source plus compact g/scg model arrays and extracted result summary are supplied."
+}

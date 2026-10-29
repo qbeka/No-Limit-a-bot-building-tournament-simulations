@@ -1,0 +1,182 @@
+{
+  "game1_chosen_on_recorded_model": 9.354213083333333,
+  "game1_dp_optimum": [
+    3,
+    5,
+    27,
+    2,
+    63
+  ],
+  "game2_small_check": {
+    "chosen": {
+      "allocation": [
+        2,
+        34,
+        3,
+        59,
+        2
+      ],
+      "payout": 6.966708333333333
+    },
+    "equal": {
+      "allocation": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "payout": 2.470854166666667
+    },
+    "proportional": {
+      "allocation": [
+        7,
+        13,
+        20,
+        27,
+        33
+      ],
+      "payout": 2.0416458333333334
+    },
+    "top_three": {
+      "allocation": [
+        0,
+        0,
+        33,
+        33,
+        34
+      ],
+      "payout": 2.5273125
+    },
+    "top_two": {
+      "allocation": [
+        0,
+        0,
+        0,
+        49,
+        51
+      ],
+      "payout": 3.8455
+    },
+    "all_in_5": {
+      "allocation": [
+        0,
+        0,
+        0,
+        0,
+        100
+      ],
+      "payout": 5.655916666666666
+    },
+    "near_all_in_5": {
+      "allocation": [
+        1,
+        1,
+        1,
+        1,
+        96
+      ],
+      "payout": 5.8525833333333335
+    },
+    "game2_initial": {
+      "allocation": [
+        17,
+        31,
+        51,
+        1,
+        0
+      ],
+      "payout": 5.105916666666666
+    },
+    "game1_minimax_regret": {
+      "allocation": [
+        6,
+        4,
+        27,
+        1,
+        62
+      ],
+      "payout": 3.935125
+    },
+    "game1_maximin": {
+      "allocation": [
+        6,
+        5,
+        28,
+        1,
+        60
+      ],
+      "payout": 3.77175
+    },
+    "game1_counterexample": {
+      "allocation": [
+        4,
+        6,
+        28,
+        3,
+        59
+      ],
+      "payout": 3.785041666666667
+    },
+    "game2_near_tie": {
+      "allocation": [
+        2,
+        35,
+        2,
+        59,
+        2
+      ],
+      "payout": 6.970291666666666
+    },
+    "game2_runner_up": {
+      "allocation": [
+        2,
+        35,
+        3,
+        59,
+        1
+      ],
+      "payout": 6.960833333333333
+    },
+    "game2_two_castles": {
+      "allocation": [
+        0,
+        39,
+        0,
+        61,
+        0
+      ],
+      "payout": 6.781625
+    },
+    "game2_2_and_4_heavy": {
+      "allocation": [
+        1,
+        35,
+        0,
+        64,
+        0
+      ],
+      "payout": 6.887291666666667
+    },
+    "game2_2_and_5": {
+      "allocation": [
+        0,
+        36,
+        0,
+        0,
+        64
+      ],
+      "payout": 4.826083333333333
+    },
+    "game2_1_and_5": {
+      "allocation": [
+        19,
+        0,
+        0,
+        0,
+        81
+      ],
+      "payout": 6.906166666666667
+    }
+  }
+}

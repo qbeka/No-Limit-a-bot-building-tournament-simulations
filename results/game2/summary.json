@@ -1,0 +1,315 @@
+{
+  "description": "replay of castle_fourway.py and castle_fourway_meta.py. the last stage of each search was also used to pick candidates, so it is a selection stage, not a test.",
+  "family_order": [
+    "balanced",
+    "high3",
+    "high2",
+    "one_big",
+    "split_small",
+    "diverse",
+    "low_castles"
+  ],
+  "first_search_best": [
+    17,
+    31,
+    51,
+    1,
+    0
+  ],
+  "adaptive_best": [
+    2,
+    34,
+    3,
+    59,
+    2
+  ],
+  "pool_profile": {
+    "balanced": {
+      "mean_bid": [
+        8.89,
+        13.48,
+        19.14,
+        25.66,
+        32.83
+      ],
+      "share_bidding_at_least_ours": [
+        0.9449,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "share_bidding_zero": [
+        0.037,
+        0.0012,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "high3": {
+      "mean_bid": [
+        1.1,
+        1.12,
+        27.19,
+        33.35,
+        37.24
+      ],
+      "share_bidding_at_least_ours": [
+        0.2541,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "share_bidding_zero": [
+        0.5827,
+        0.5838,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "high2": {
+      "mean_bid": [
+        1.22,
+        1.27,
+        13.33,
+        29.8,
+        54.38
+      ],
+      "share_bidding_at_least_ours": [
+        0.2672,
+        0.0,
+        0.432,
+        0.0001,
+        1.0
+      ],
+      "share_bidding_zero": [
+        0.5527,
+        0.5468,
+        0.3937,
+        0.1597,
+        0.0
+      ]
+    },
+    "one_big": {
+      "mean_bid": [
+        1.43,
+        7.22,
+        3.05,
+        24.69,
+        63.61
+      ],
+      "share_bidding_at_least_ours": [
+        0.2925,
+        0.0,
+        0.2447,
+        0.2481,
+        0.9383
+      ],
+      "share_bidding_zero": [
+        0.5915,
+        0.4319,
+        0.5837,
+        0.3468,
+        0.0562
+      ]
+    },
+    "split_small": {
+      "mean_bid": [
+        7.73,
+        16.14,
+        13.47,
+        21.79,
+        40.88
+      ],
+      "share_bidding_at_least_ours": [
+        0.7997,
+        0.0,
+        0.5348,
+        0.0945,
+        0.6877
+      ],
+      "share_bidding_zero": [
+        0.1463,
+        0.0816,
+        0.3588,
+        0.2774,
+        0.282
+      ]
+    },
+    "diverse": {
+      "mean_bid": [
+        3.93,
+        10.68,
+        19.2,
+        28.2,
+        37.99
+      ],
+      "share_bidding_at_least_ours": [
+        0.2705,
+        0.0871,
+        0.6072,
+        0.1237,
+        0.7738
+      ],
+      "share_bidding_zero": [
+        0.7059,
+        0.5132,
+        0.3817,
+        0.2944,
+        0.2253
+      ]
+    },
+    "low_castles": {
+      "mean_bid": [
+        16.64,
+        29.86,
+        51.73,
+        1.18,
+        0.6
+      ],
+      "share_bidding_at_least_ours": [
+        1.0,
+        0.0151,
+        1.0,
+        0.0,
+        0.1299
+      ],
+      "share_bidding_zero": [
+        0.0,
+        0.0,
+        0.0,
+        0.3817,
+        0.6236
+      ]
+    }
+  },
+  "adaptive_scenario_best": [
+    {
+      "allocation": [
+        6,
+        2,
+        41,
+        51,
+        0
+      ],
+      "payout": 7.439300537109375
+    },
+    {
+      "allocation": [
+        19,
+        0,
+        0,
+        0,
+        81
+      ],
+      "payout": 7.255523681640625
+    },
+    {
+      "allocation": [
+        2,
+        34,
+        4,
+        59,
+        1
+      ],
+      "payout": 6.71075439453125
+    },
+    {
+      "allocation": [
+        0,
+        35,
+        1,
+        62,
+        2
+      ],
+      "payout": 7.229339599609375
+    },
+    {
+      "allocation": [
+        21,
+        0,
+        0,
+        3,
+        76
+      ],
+      "payout": 7.512725830078125
+    },
+    {
+      "allocation": [
+        11,
+        33,
+        54,
+        2,
+        0
+      ],
+      "payout": 6.699127197265625
+    }
+  ],
+  "checks": {
+    "pools_match_recorded": true,
+    "first_search_best_matches_recorded": true,
+    "adaptive_best_matches_recorded": true,
+    "first_search_vs_recorded": {
+      "kept_by_both": 262,
+      "only_in_replay": [],
+      "only_in_recorded": [
+        [
+          18,
+          29,
+          47,
+          6,
+          0
+        ]
+      ],
+      "score_max_diff_on_common": 0.0
+    },
+    "adaptive_search_vs_recorded": {
+      "kept_by_both": 722,
+      "only_in_replay": [
+        [
+          2,
+          16,
+          0,
+          0,
+          82
+        ],
+        [
+          6,
+          34,
+          2,
+          57,
+          1
+        ],
+        [
+          6,
+          34,
+          6,
+          54,
+          0
+        ]
+      ],
+      "only_in_recorded": [
+        [
+          19,
+          1,
+          0,
+          3,
+          77
+        ],
+        [
+          21,
+          28,
+          50,
+          1,
+          0
+        ]
+      ],
+      "score_max_diff_on_common": 0.0
+    },
+    "adaptive_weights_max_diff_vs_recorded": 0.0,
+    "table_vs_direct_scorer_diff": 0.0
+  }
+}

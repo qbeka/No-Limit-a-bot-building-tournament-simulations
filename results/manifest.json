@@ -1,0 +1,35 @@
+{
+  "runs": {
+    "quick": {
+      "finished": "2026-10-28 21:52:22",
+      "seconds": 0.1
+    },
+    "game1": {
+      "finished": "2026-10-28 21:52:23",
+      "seconds": 1.7
+    },
+    "game2": {
+      "finished": "2026-10-28 21:52:51",
+      "seconds": 27.3
+    },
+    "fresh": {
+      "finished": "2026-10-28 21:52:51",
+      "seconds": 0.7
+    },
+    "robustness": {
+      "finished": "2026-10-28 21:55:45",
+      "seconds": 173.9
+    },
+    "report": {
+      "finished": "2026-10-28 21:55:46",
+      "seconds": 0.7
+    }
+  },
+  "environment": {
+    "python": "3.12.7",
+    "numpy": "2.3.5",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "config": "config.toml"
+}

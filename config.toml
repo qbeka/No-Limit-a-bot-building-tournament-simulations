@@ -1,0 +1,212 @@
+# every number here is copied from reference/originals unless marked "new"
+
+[choices]
+game1 = [3, 5, 27, 2, 63]
+game2 = [2, 34, 3, 59, 2]
+
+# ---------------------------------------------------------------- game 1
+# source: castle_analysis.py
+
+[game1]
+seed = 5462938
+samples = 30000
+scenarios = [
+  [0.15, 0.30, 0.25, 0.10, 0.15, 0.04, 0.01],
+  [0.05, 0.15, 0.35, 0.20, 0.10, 0.10, 0.05],
+  [0.03, 0.07, 0.20, 0.30, 0.10, 0.20, 0.10],
+  [0.02, 0.08, 0.15, 0.15, 0.15, 0.30, 0.15],
+  [0.03, 0.07, 0.10, 0.15, 0.20, 0.20, 0.25],
+  [0.02, 0.08, 0.20, 0.10, 0.40, 0.10, 0.10],
+]
+
+[game1.families.equal]
+scale = 4
+atom = 0.4
+templates = [[20, 20, 20, 20, 20]]
+
+[game1.families.weighted]
+scale = 4
+atom = 0.4
+templates = [
+  [7, 13, 20, 27, 33], [6, 13, 20, 27, 34], [10, 15, 20, 25, 30], [5, 10, 20, 30, 35],
+  [5, 10, 15, 30, 40], [5, 10, 15, 25, 45], [5, 15, 20, 25, 35],
+]
+
+[game1.families.high3]
+scale = 4
+atom = 0.5
+templates = [
+  [0, 0, 33, 33, 34], [0, 0, 34, 33, 33], [0, 0, 25, 33, 42], [0, 0, 25, 35, 40],
+  [0, 0, 30, 35, 35], [0, 0, 20, 35, 45], [0, 0, 31, 31, 38], [1, 1, 32, 33, 33],
+  [1, 1, 31, 33, 34], [1, 1, 26, 35, 37], [2, 2, 26, 34, 36],
+]
+
+[game1.families.high2]
+scale = 4
+atom = 0.4
+templates = [
+  [0, 0, 0, 50, 50], [0, 0, 0, 49, 51], [0, 0, 0, 45, 55], [0, 0, 0, 44, 56],
+  [1, 1, 1, 46, 51], [1, 1, 1, 41, 56], [2, 2, 2, 41, 53], [1, 1, 36, 1, 61],
+  [1, 1, 41, 1, 56], [0, 0, 50, 0, 50], [0, 0, 0, 40, 60],
+]
+
+[game1.families.diverse]
+castles_used = [2, 3, 4, 5]
+castles_used_p = [0.15, 0.35, 0.30, 0.20]
+concentration = [0.3, 1, 5]
+
+# best responses to random mixtures of the earlier families
+[game1.families.meta1]
+responses = 500
+dirichlet = [1, 2, 4, 3, 2]
+scale = 2
+atom = 0.4
+
+[game1.families.meta2]
+responses = 500
+dirichlet = [0.5, 1, 2, 2, 2, 4]
+scale = 2
+atom = 0.4
+
+# ---------------------------------------------------------------- game 2
+# source: castle_fourway.py and castle_fourway_meta.py
+
+[game2]
+seed = 872465293
+samples = 15000
+scenarios = [
+  [0.25, 0.30, 0.20, 0.10, 0.05, 0.10],
+  [0.05, 0.25, 0.35, 0.15, 0.10, 0.10],
+  [0.05, 0.10, 0.20, 0.35, 0.20, 0.10],
+  [0.05, 0.10, 0.15, 0.15, 0.35, 0.20],
+  [0.10, 0.10, 0.15, 0.10, 0.15, 0.40],
+  [0.05, 0.05, 0.15, 0.40, 0.25, 0.10],
+]
+
+[game2.families.balanced]
+scale = 4
+atom = 0.45
+templates = [
+  [20, 20, 20, 20, 20], [7, 13, 20, 27, 33], [6, 13, 20, 27, 34], [5, 10, 20, 30, 35],
+  [5, 10, 15, 25, 45], [10, 15, 20, 25, 30],
+]
+
+[game2.families.high3]
+scale = 4
+atom = 0.5
+templates = [
+  [0, 0, 33, 33, 34], [0, 0, 25, 33, 42], [0, 0, 25, 35, 40], [0, 0, 30, 35, 35],
+  [0, 0, 20, 35, 45], [1, 1, 32, 33, 33], [1, 1, 26, 35, 37], [2, 2, 26, 34, 36],
+  [0, 0, 31, 31, 38],
+]
+
+[game2.families.high2]
+scale = 4
+atom = 0.4
+templates = [
+  [0, 0, 0, 50, 50], [0, 0, 0, 49, 51], [0, 0, 0, 45, 55], [0, 0, 0, 44, 56],
+  [1, 1, 1, 46, 51], [1, 1, 1, 41, 56], [2, 2, 2, 41, 53], [1, 1, 36, 1, 61],
+  [1, 1, 41, 1, 56], [0, 0, 50, 0, 50], [0, 0, 0, 40, 60], [0, 0, 40, 0, 60],
+  [0, 0, 0, 35, 65],
+]
+
+[game2.families.one_big]
+scale = 4
+atom = 0.35
+templates = [
+  [0, 0, 0, 0, 100], [1, 1, 1, 1, 96], [0, 0, 0, 20, 80], [0, 0, 25, 0, 75],
+  [0, 20, 0, 0, 80], [0, 25, 0, 0, 75], [1, 21, 1, 1, 76], [5, 15, 0, 0, 80],
+  [0, 0, 0, 100, 0], [0, 0, 0, 80, 20], [0, 0, 0, 70, 30], [0, 0, 0, 30, 70],
+]
+
+[game2.families.split_small]
+scale = 3
+atom = 0.35
+templates = [
+  [10, 20, 0, 0, 70], [11, 21, 0, 0, 68], [10, 21, 1, 1, 67], [13, 21, 0, 0, 66],
+  [0, 26, 0, 0, 74], [1, 1, 27, 1, 70], [3, 5, 27, 2, 63], [5, 10, 0, 26, 59],
+  [10, 20, 30, 40, 0], [15, 25, 25, 35, 0], [0, 21, 31, 48, 0], [11, 21, 0, 68, 0],
+  [11, 0, 31, 58, 0],
+]
+
+[game2.families.diverse]
+castles_used = [1, 2, 3, 4, 5]
+castles_used_p = [0.05, 0.35, 0.30, 0.20, 0.10]
+concentration = [0.3, 1, 5]
+
+# coarse-to-fine monte carlo search: (groups per scenario, seed, how to pick what survives)
+[game2.search]
+grid_step = 2
+radius = 2
+stages = [
+  { groups = 128, seed = 782364, keep = 240 },
+  { groups = 512, seed = 829047, keep = 250 },
+  { groups = 8192, seed = 9830124 },
+]
+
+# the second search adds a family built around the first search's top 80
+[game2.adaptive]
+centers = 80
+samples = 15000
+scale = 2
+atom = 0.6
+fractions = [0, 0.1, 0.2, 0.3, 0.4, 0.2]
+stages = [
+  { groups = 256, seed = 689245, keep = 240 },
+  { groups = 1024, seed = 654783, keep = 300 },
+  { groups = 16384, seed = 923740 },
+]
+
+# source: reference/fresh_check/castle_frozen_check.py
+[fresh_check]
+seed = 430291867
+groups = 50000
+
+# ---------------------------------------------------------------- new: robustness
+# fixed before any robustness result was computed
+
+[baselines]
+equal = [20, 20, 20, 20, 20]
+proportional = [7, 13, 20, 27, 33]
+top_three = [0, 0, 33, 33, 34]
+top_two = [0, 0, 0, 49, 51]
+all_in_5 = [0, 0, 0, 0, 100]
+near_all_in_5 = [1, 1, 1, 1, 96]
+game2_initial = [17, 31, 51, 1, 0]
+game1_minimax_regret = [6, 4, 27, 1, 62]
+game1_maximin = [6, 5, 28, 1, 60]
+game1_counterexample = [4, 6, 28, 3, 59]
+game2_near_tie = [2, 35, 2, 59, 2]
+game2_runner_up = [2, 35, 3, 59, 1]
+game2_two_castles = [0, 39, 0, 61, 0]
+game2_2_and_4_heavy = [1, 35, 0, 64, 0]
+game2_2_and_5 = [0, 36, 0, 0, 64]
+# added after the first robustness run: the searches kept returning it.
+# adding a rival can only make the chosen allocations look worse.
+game2_1_and_5 = [19, 0, 0, 0, 81]
+
+[robustness]
+seeds = [101, 202, 303]           # new family pools, same templates
+groups = 20000                    # per scenario, game 2, same groups for every allocation
+group_seed = 2718
+# a smaller version of the original search, rerun inside every game 2 experiment
+search = [
+  { groups = 64, seed = 31, keep = 240 },
+  { groups = 256, seed = 32, keep = 250 },
+  { groups = 4096, seed = 33 },
+]
+noise_factors = [0.5, 2.0]        # multiply every family's noise scale
+atom_factors = [0.5, 1.5]         # multiply every exact-template probability (capped at 1)
+tilt = 0.5                        # one family gets this share, the rest keep the average mix
+prevalence = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+
+# copies of our own choice and its neighbours
+copy_scale = 2
+copy_atom = 0.5
+
+# allocations aimed at beating the chosen ones
+game1_counters = [[4, 6, 28, 3, 59], [4, 6, 28, 0, 62], [0, 6, 28, 3, 63], [4, 0, 28, 4, 64]]
+game2_counters = [
+  [0, 35, 0, 60, 5], [1, 35, 2, 60, 2], [0, 0, 0, 60, 40], [3, 35, 0, 0, 62],
+  [10, 35, 20, 0, 35], [0, 0, 35, 60, 5],
+]
